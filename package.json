@@ -1,6 +1,6 @@
 {
   "name": "@nhz.io/nw-signer",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "NWJS content signer vinyl stream",
   "main": "index.js",
   "bin": {
