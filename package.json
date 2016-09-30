@@ -1,0 +1,78 @@
+{
+  "name": "@nhz.io/nw-signer",
+  "version": "1.0.2",
+  "description": "NWJS content signer vinyl stream",
+  "main": "index.js",
+  "bin": {
+    "nw-signer": "lib/cli.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "ava --watch --verbose",
+    "nyc": "xo && nyc --reporter=lcov ava",
+    "report": "node -e \"require('open')('./coverage/lcov-report/index.html')\"",
+    "coverage": "npm run nyc && npm run report ",
+    "test": "xo && ava --verbose",
+    "prepublish": "xo && ava --verbose",
+    "jsdoc": "jsdoc index.js lib -r README.md -d doc",
+    "viewdoc": "node -e \"require('open')('./doc/index.html')\"",
+    "doc": "npm run jsdoc && npm run viewdoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhz-io/nw-signer.git"
+  },
+  "pre-push": "test",
+  "keywords": [
+    "nw",
+    "nwjs",
+    "nw.js",
+    "treehash",
+    "nw-signer",
+    "stream",
+    "nhz.io"
+  ],
+  "author": "Ishi Ruy <dev@nhz.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nhz-io/nw-signer/issues"
+  },
+  "homepage": "https://github.com/nhz-io/nw-signer",
+  "dependencies": {
+    "duplexer2": "^0.1.4",
+    "through2": "^2.0.1",
+    "vinyl": "^2.0.0",
+    "@nhz.io/nw-treehash": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "jsdoc": "^3.4.1",
+    "nyc": "^8.3.0",
+    "open": "0.0.5",
+    "pre-push": "^0.1.1",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "space": 4,
+    "semicolon": false,
+    "ignores": [
+      "doc/**",
+      "coverage/**"
+    ],
+    "rules": {
+      "comma-dangle": [
+        1,
+        "always-multiline"
+      ],
+      "no-unused-vars": [
+        1
+      ]
+    }
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  }
+}
