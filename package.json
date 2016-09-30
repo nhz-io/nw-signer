@@ -18,7 +18,9 @@
     "prepublish": "xo && ava --verbose",
     "jsdoc": "jsdoc index.js lib -r README.md -d doc",
     "viewdoc": "node -e \"require('open')('./doc/index.html')\"",
-    "doc": "npm run jsdoc && npm run viewdoc"
+    "doc": "npm run jsdoc && npm run viewdoc",
+    "github": "node -e \"require('open')(require('./package.json').homepage)\""
+
   },
   "repository": {
     "type": "git",
