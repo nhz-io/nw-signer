@@ -6,6 +6,7 @@ import {
     PROTECTED,
     PROTECTED_B64,
     KEY,
+    KEY_SIGNATURE,
 } from '../../lib/constants'
 
 test('ITEM_ID', t => t.is(ITEM_ID, 'abcdefghijklmnopabcdefghijklmnop'))
@@ -46,4 +47,13 @@ hsAD6Y7jCRUEOMRu2523qyC/47QQyjMTOi8qMlbBAwar8TRz4VA0yxuwWGyCVAlw
 ieyL073NR4u6jz+MSGcry36DYXat7A15sId1PgeXGRtrGYY+4oPo4Rt4UXwmMQfN
 QC9fulNzn+UZppbVuIQdOiUBHt9e56CK4W6PdRQYqIUxHPGJyvBjZw==
 -----END RSA PRIVATE KEY-----`
+))
+
+test('KEY_SIGNATURE', t => t.is(KEY_SIGNATURE, `
+kkmmgjgX7RJvX6av5BDMlyW211WFyBYDHvBkrcIfTXXRt9VCHQb6yzTFX3xhmOMq
+QD4veAAgyNRTRXonxWixaaM7KMPiWCn6saY_37e4M5vj_8fh41znYoPZEAl-dA_b
+oyoHpM9EPmGuXAc6kCjgojLqqVZ29hXWvKMeV3x3wKJQH__FFX35MjXpDSmKU4iU
+HRCsVK6ot8NPtELJIei1GB-z4_QlbS2AYgnnzI63Roircjyl7b3DcQqRbSspcolq
+eQo0EmfDZ1RHhP0K5S1TCHgzjByYFMZpT6S1GJhWxaGWitMd8Rp7AJs_u8kRfXLo
+fjzPWFUWrYC5a-X0mzHA0g`.split(/[\n\r]+/).join('')
 ))
