@@ -47,8 +47,8 @@ npm run coverage
 
 ### See also
 * [https://github.com/nhz-io/nw-treehash](https://github.com/nhz-io/nw-treehash)
-* [https://github.com/nwjs/nw.js/blob/nw13/tools/sign/sign.py](https://github.com/nwjs/nw.js/blob/nw13/tools/sign/sign.py)
-* [https://github.com/nwjs/nw.js/blob/nw13/tools/payload.cc](https://github.com/nwjs/nw.js/blob/nw13/tools/payload.cc)
+* [https://github.com/nwjs/nw.js/blob/nw18/tools/sign/sign.py](https://github.com/nwjs/nw.js/blob/nw18/tools/sign/sign.py)
+* [https://github.com/nwjs/nw.js/blob/nw18/tools/payload.cc](https://github.com/nwjs/nw.js/blob/nw18/tools/payload.cc)
 
 ## License
 
