@@ -25,6 +25,18 @@ npm i -D @nhz.io/nw-signer
 ```
 
 ## Usage
+```js
+const through = require('through2')
+const vfs = require('vinyl-fs')
+const signer = require('@nhz.io/nw-signer')
+
+vfs.src(process.argv.slice(2))
+    .pipe(signer())
+    .pipe(through.obj((file, enc, cb) => {
+        process.stdout.write(file.contents)
+        cb()
+    }))
+```
 
 ## Dev
 
