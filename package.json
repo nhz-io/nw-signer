@@ -31,8 +31,13 @@
     "nwjs",
     "nw.js",
     "treehash",
+    "nw-treehash",
     "nw-signer",
+    "content-signing",
+    "signing",
     "stream",
+    "vinyl",
+    "vinyl-stream",
     "nhz.io"
   ],
   "author": "Ishi Ruy <dev@nhz.io>",
