@@ -16,6 +16,7 @@ test('sanitize', t => {
     t.is(sanitize(), null)
     t.is(sanitize({}), null)
     t.is(sanitize(123), null)
+    t.is(sanitize('"foo"'), null)
 })
 
 test('sanitize json string', t => {
@@ -32,6 +33,8 @@ test('sanitize json path', t => {
     const buff = sanitize(test)
     t.true(buff instanceof Buffer)
     t.is(buff.toString(), json)
+    writeFileSync(test, '"non-object"')
+    t.falsy(sanitize(test))
     unlinkSync(test)
 })
 
@@ -41,6 +44,13 @@ test('encode string', t =>
 
 test('encode buffer', t => {
     t.is(encode(Buffer.from('???~~~')), 'Pz8_fn5-')
+})
+
+test('encode object', t => {
+    t.is(encode({test: true}), 'eyJ0ZXN0Ijp0cnVlfQ')
+    const cyclic = {}
+    cyclic.self = cyclic
+    t.falsy(encode(cyclic))
 })
 
 test('sign', t => {
