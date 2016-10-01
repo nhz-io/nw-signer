@@ -1,0 +1,27 @@
+{
+  "block_size": 4096,
+  "format": "treehash",
+  "hash_block_size": 4096,
+  "files": [
+    {
+      "path": "empty",
+      "root_hash": "47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU"
+    },
+    {
+      "path": "4095",
+      "root_hash": "Cx_NFiSfI5TOktQmfZkfYupivhHCYhr3MCe6DnhI8wQ"
+    },
+    {
+      "path": "4096",
+      "root_hash": "JkU0J8E8hd8tlJW6GtwWsNJeS18zgRjPw2i8hP8aKdE"
+    },
+    {
+      "path": "4097",
+      "root_hash": "fAU92pVOxXY1-BPEU_OLwaYuowJK7e29Lzxb2K3PRQ4"
+    },
+    {
+      "path": "16Meg",
+      "root_hash": "myk0NL3tA-eoQrpI0aPa6ExaCjI0DPui6vdMad-0f4Y"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "block_size": 4096,
+  "format": "treehash",
+  "hash_block_size": 4096,
+  "files": [
+    {
+      "path": "a",
+      "root_hash": "ypeBEsobvcr6wjGzmiPcTaeG7_gUfE5yuYB3ha_uSLs"
+    },
+    {
+      "path": "b",
+      "root_hash": "PiPoFgA5WUoziU9lZOGxNIu9egCI1CxKy3PurtWcAJ0"
+    },
+    {
+      "path": "package.json",
+      "root_hash": "RBNvo1WzZ4oRRq0W9-hknpT7T8If536DEMBg9hyq_4o"
+    }
+  ]
+}
