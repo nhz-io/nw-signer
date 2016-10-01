@@ -20,7 +20,6 @@
     "viewdoc": "node -e \"require('open')('./doc/index.html')\"",
     "doc": "npm run jsdoc && npm run viewdoc",
     "github": "node -e \"require('open')(require('./package.json').homepage)\""
-
   },
   "repository": {
     "type": "git",
@@ -43,10 +42,11 @@
   },
   "homepage": "https://github.com/nhz-io/nw-signer",
   "dependencies": {
+    "@nhz.io/nw-treehash": "^1.0.3",
     "duplexer2": "^0.1.4",
+    "node-rsa": "^0.4.2",
     "through2": "^2.0.1",
-    "vinyl": "^2.0.0",
-    "@nhz.io/nw-treehash": "^1.0.3"
+    "vinyl": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.16.0",
@@ -54,6 +54,7 @@
     "nyc": "^8.3.0",
     "open": "0.0.5",
     "pre-push": "^0.1.1",
+    "tempfile": "^1.1.1",
     "xo": "^0.16.0"
   },
   "xo": {
